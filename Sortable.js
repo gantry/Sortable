@@ -581,7 +581,7 @@
 
 			moved = true;
 
-			// _dispatchEvent(this, rootEl, 'over', dragEl, rootEl, evt, evt.target); // Gantry 5
+			_dispatchEvent(this, rootEl, 'over', dragEl, rootEl, evt, evt.target); // Gantry 5
 			if (activeGroup && !options.disabled &&
 				(isOwner
 					? canSort || (revert = !rootEl.contains(dragEl)) // Reverting item into the original list
